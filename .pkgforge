@@ -1,0 +1,22 @@
+name 'npth'
+org 'amylum'
+
+licenses 'COPYING.LESSER'
+
+configure_flags(
+  prefix: '/usr',
+  'enable-maintainer-mode': nil
+)
+
+harden
+
+build do
+  run './autogen.sh'
+  configure
+  make
+  install
+end
+
+test do
+  # TODO: add tests
+end

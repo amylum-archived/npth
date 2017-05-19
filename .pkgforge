@@ -1,7 +1,7 @@
 name 'npth'
 org 'amylum'
 
-licenses 'COPYING.LESSER'
+licenses 'COPYING.LIB'
 
 configure_flags(
   prefix: '/usr',
